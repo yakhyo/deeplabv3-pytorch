@@ -10,7 +10,7 @@ from PIL import Image
 
 import torch
 import torch.distributed as dist
-from torchvision import transforms as T
+from torchvision import transforms
 from torchvision.transforms import functional as F
 
 
@@ -66,7 +66,7 @@ class RandomCrop(object):
     def __call__(self, image, target):
         image = pad_if_smaller(image, self.size)
         target = pad_if_smaller(target, self.size, fill=255)
-        crop_params = T.RandomCrop.get_params(image, (self.size, self.size))
+        crop_params = transforms.RandomCrop.get_params(image, (self.size, self.size))
         image = F.crop(image, *crop_params)
         target = F.crop(target, *crop_params)
         return image, target
