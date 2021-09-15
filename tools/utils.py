@@ -123,7 +123,7 @@ class SegmentationPresetTrain:
 
 class SegmentationPresetEval:
     def __init__(self, base_size, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)):
-        self.transforms = T.Compose([
+        self.transforms = Compose([
             RandomResize(base_size, base_size),
             ToTensor(),
             Normalize(mean=mean, std=std),
