@@ -9,7 +9,7 @@ Implementation of **DeepLabV3** using PyTorch
 
 | DeepLabV3               | Backbone          |mean IoU             |
 | ----------------------- | ----------------- |---------------------|
-| deeplabv3_resnet50      | resnet50          |58.6(after 5 epochs  |
+| deeplabv3_resnet50      | resnet50          |58.6(after 5 epochs) |
 | deeplabv3_resnet101     | resnet101         |-                    |
 | deeplabv3_mobilenetv3   | mobilenetv3_large |-                    |
 
