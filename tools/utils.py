@@ -99,7 +99,6 @@ class Normalize(object):
         return image, target
 
 
-
 class SegmentationPresetTrain:
     def __init__(self, base_size, crop_size, hflip_prob=0.5, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)):
         min_size = int(0.5 * base_size)
@@ -131,11 +130,7 @@ class SegmentationPresetEval:
         return self.transforms(img, target)
 
 
-
 class SmoothedValue(object):
-    """Track a series of values and provide access to smoothed values over a
-    window or the global series average.
-    """
 
     def __init__(self, window_size=20, fmt=None):
         if fmt is None:
