@@ -4,13 +4,14 @@
 
 Implementation of **DeepLabV3** using PyTorch
 
-### Available architectures and mean IoU after 5 epochs
+### Available architectures 
 
-| DeepLabV3               | Backbone          |mean IoU |
-| ----------------------- | ----------------- |---------|
-| deeplabv3_resnet50      | resnet50          |58.6     |
-| deeplabv3_resnet101     | resnet101         |-        |
-| deeplabv3_mobilenetv3   | mobilenetv3_large |-        |
+
+| DeepLabV3               | Backbone          |mean IoU             |
+| ----------------------- | ----------------- |---------------------|
+| deeplabv3_resnet50      | resnet50          |58.6(after 5 epochs  |
+| deeplabv3_resnet101     | resnet101         |-                    |
+| deeplabv3_mobilenetv3   | mobilenetv3_large |-                    |
 
 ### Dataset
 ```
