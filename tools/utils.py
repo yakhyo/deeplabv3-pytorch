@@ -99,8 +99,6 @@ class Normalize(object):
         return image, target
 
 
-""" -- """
-
 
 class SegmentationPresetTrain:
     def __init__(self, base_size, crop_size, hflip_prob=0.5, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)):
@@ -132,8 +130,6 @@ class SegmentationPresetEval:
     def __call__(self, img, target):
         return self.transforms(img, target)
 
-
-""" --- """
 
 
 class SmoothedValue(object):
