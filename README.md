@@ -28,9 +28,7 @@ Implementation of **DeepLabV3** using PyTorch
 ```
 
 ### Train
-**Note**
-
-Modify these arguments according to your data and model in `train.py`
+**Note**: Modify these arguments according to your data and model in `train.py`
 ```
 parser.add_argument('--data-path', default='../../Datasets/COCO', help='dataset path') 
 parser.add_argument('--dataset', default='coco', help='dataset name')                  
